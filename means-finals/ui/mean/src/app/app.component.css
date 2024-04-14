@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.container {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.add-book-form h2,
+.book-list h2 {
+  color: #2980b9;
+}
+
+.add-book-form input {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+.add-book-form button {
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.add-book-form button:hover {
+  background-color: #2980b9;
+}
+
+.book-list .book-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.book-list .book-details {
+  flex-grow: 1;
+}
+
+.book-list .book-details p {
+  margin: 8px 0;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+.book-list {
+  margin-top: 15px;
+}

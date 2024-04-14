@@ -1,0 +1,35 @@
+<body>
+  <div class="navbar">
+    <h1>Books Application</h1>
+  </div>
+
+  <div class="main-container">
+    <div class="container">
+      <header>
+        <h2>Add Book</h2>
+      </header>
+      <div class="add-book-form">
+        <input id="newBook" placeholder="Title">
+        <input id="newDesc" placeholder="Description">
+        <input id="newPrice" placeholder="Book Price">
+        <button (click)="addBook()">Add Book</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <h2>Book List</h2>
+      </header>
+      <div class="book-list">
+        <div *ngFor="let book of books" class="book-item">
+          <div class="book-details">
+            <p><strong>Title:</strong> {{ book.title }}</p>
+            <p><strong>Description:</strong> {{ book.description }}</p>
+            <p><strong>Price:</strong> ${{ book.price }}</p>
+          </div>
+          <button (click)="deleteBook(book.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
